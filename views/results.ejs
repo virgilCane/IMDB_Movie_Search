@@ -1,0 +1,16 @@
+<h1>These Are the Search Results for <%= search%></h1>
+
+<style>
+	img{
+		width:10%;
+		height:auto;
+	}
+
+</style>
+
+<% data['Search'].forEach((movie) =>{ %>
+    <li><%= movie['Title']  %> - <%= movie['Year'] %></li>
+    <img src = <%= movie['Poster'] %> >
+<% } )%>
+
+<a href = '/'> New Search </a>
